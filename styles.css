@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-menu{
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    background: #614AD3;
+    top: 0;
+    left: 0;
+
+}
+
+.name-menu{
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.name-menu a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: inline-block;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    transition: all ease 0.5s;
+}
+
+.name-menu a:hover{
+    padding: 30px;
+    
+}
+
+.name-menu a::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-top: 4px solid #e42c64;
+    border-left: 4px solid #e42c64;
+    top: 0;
+    left: 0;
+    position: absolute;
+   
+}
+
+.name-menu a::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-bottom: 4px solid #e42c64;
+    border-right: 4px solid #e42c64;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.content-menu{
+    
+    padding: 30px;
+}
+
+
+
+.content-menu ul li{
+    margin: 20px 0px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    list-style-type: none;
+    transition: all ease 0.5s;
+
+}
+
+.content-menu ul li a{
+    transition: all ease 1s;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.3em;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.content-menu ul li:hover{
+    margin-left: 50px;
+    box-shadow: 2px 0px 2px;
+
+}
+
+.content-menu ul li a:hover{
+    
+    color: #e42c64;
+}
+
+.footer-menu{
+    position: absolute;
+    padding: 30px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    bottom: 0;
+    left: 0;
+
+}
+
+/* COntent Profil */
+
+.profil{
+    width: 1249px;
+    height: 100vh;
+    float: right;
+}
+.photo-content{
+    margin-top: 100px;
+    padding: 20px;
+    
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.photo img{
+
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-color: blue;
+}
+.nom-prenom-age{
+    padding: 20px;
+}
+.nom-prenom-age p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.a-propos-de-moi{
+    
+    font-family: 'Rubik', sans-serif;
+    padding-inline-start: 50px;
+}
+
+.a-propos-de-moi H2{
+    color: #e42c64;
+}
+
+.Mot-important{
+    color: #e42c64;
+}
+
+.lient-de-contact{
+    padding-inline-start: 50px;
+    margin-top: 30px;
+    
+}
+.lient-de-contact ul{
+    display: flex;
+}
+.lient-de-contact ul li{
+    margin: 0px 5px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #614AD3;
+    width: 60px;
+    height: 60px;
+    transition: all ease 1s;
+    
+}
+.lient-de-contact ul li:hover{
+    box-shadow: 2px 3px 10px;
+    background-color: #e42c64;
+}
+.lient-de-contact ul li a{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+/* COntent profil end */
+
+/* Content parcours */
+
+.parcours{
+    
+    width: 1249px;
+    height: 100vh;
+    float: right;
+    }
+
+.parcours .titre{
+    color: #e42c64;
+    font-family: 'Rubik', sans-serif;
+    padding: 50px;
+}
+.bordure{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.experiencepro-scolaire{
+    padding: 0 50px;
+    display: flex;
+}
+
+.scolaire{
+    width: 50%;
+}
+
+.titre-scolaire{
+    font-family: 'Rubik', sans-serif;
+    color: black;
+}
+.police{
+    font-family: 'Rubik', sans-serif;
+}
+.titredate-contenu-sco{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.espace{
+    margin: 0px 20px;
+}
+.espace-actif{
+    margin: 0px 10px;
+}
+.pulse{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: gray;
+}
+
+.pulse-actif{
+    background-color: green;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    animation: pulse-black 2s infinite;
+}
+@keyframes pulse-black {
+    0% {
+      transform: scale(1.35);
+      
+      
+    }
+    
+    70% {
+      transform: scale(2.45);
+      
+    }
+    
+    100% {
+      transform: scale(1.35);
+    
+    }
+  }
+
+.description-scolaire{
+    margin: 20px;
+    width: 50%;
+
+}
+
+.professionnel{
+    width: 50%;
+}
